@@ -3,6 +3,7 @@ from rest_framework.parsers import MultiPartParser
 # from tensorflow.keras.models import load_model
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.generics import CreateAPIView
 from rest_framework import status
 from .serializers import *
 from .models import *
