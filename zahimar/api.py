@@ -18,7 +18,7 @@ def process_image(image_file):
     x = x / 255.0
     return x
 
-class ZahimarApi(CreateAPIView):
+class ZahimarApi(APIView):
     parser_classes = [MultiPartParser]
     def post(self, request, format=None):
         # Save the uploaded image to the database
