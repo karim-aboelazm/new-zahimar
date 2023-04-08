@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-import django_heroku
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -121,8 +121,7 @@ MEDIAFILES_DIRS = [os.path.join(BASE_DIR,'mediafiles'),]
 
 STATICFILES_STORAGE =  'django.contrib.staticfiles.storage.StaticFilesStorage' 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-if os.getcwd() == '/zahimar':
+
+if os.getcwd() == '/app':
     DEBUG = False
     
-django_heroku.settings(locals())
-
