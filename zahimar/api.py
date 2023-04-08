@@ -1,5 +1,5 @@
 from rest_framework.parsers import MultiPartParser
-from tensorflow.keras.preprocessing import image
+#from tensorflow.keras.preprocessing import image
 # from tensorflow.keras.models import load_model
 from rest_framework.response import Response
 from rest_framework.views import APIView
